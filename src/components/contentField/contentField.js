@@ -63,7 +63,6 @@ class ContentField extends Component{
                         key={item.id}
                         data-id={item.id}
                         onClick={this.onUpdateChar}
-                        //ref={this.setRef}
                         >
                     <div className="content-field_content_item_wrapper">
                             <img src={item.thumbnail} alt={item.name} />
