@@ -1,0 +1,32 @@
+@import '../../resources/style/variables.scss';
+@import '../../resources/style/buttons.scss';
+
+.comics{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    justify-items: center;
+    align-content: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    width: 100%;
+    background-color: $main-color;
+
+
+    & h5{
+        margin: 0;
+    }
+    &_item{
+        width: 250px;
+    }
+    & img{
+        margin: 0 auto;
+        box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.8);
+    }
+    & .load_more{
+            grid-column-start: 1;
+            grid-column-end: 5;
+
+    }
+}

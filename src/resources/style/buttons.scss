@@ -1,0 +1,30 @@
+@import '../style/variables.scss';
+.btn{
+    width: 95px;
+    height: 40px;
+    text-transform: uppercase;
+    border: none;
+    transform: skew(-10deg);
+    box-shadow: 3px 0px 6px rgba(255,255,255,0.5);
+    cursor: pointer;
+    &_light{
+        box-shadow: 3px 0px 6px rgba(0,0,0,0.5);
+    }
+    &:hover{
+        width: 100px;
+        height: 45px;
+        box-shadow: 3px 0px 6px rgba(90, 4, 4, 0.603);
+    }
+    &:disabled{
+        filter: grayscale(.6);
+    }
+}
+
+.homepage{
+    color: $main-color;
+    background-color: $btn-color;
+}
+.wiki{
+    color:$main-color;
+    background-color: dimgrey;
+}
